@@ -1430,7 +1430,7 @@ async def text_handler(bot: Client, m: Message):
                 url = response.json()['url']  
            
             elif 'videos.classplusapp' in url:
-                url = requests.get(f'https://api.classplusapp.com/cams/uploader/video/jw-signed-url?url={url}', headers={'x-access-token': f'{raw_text4}'}).json()['url']
+                url = requests.get(f'https://api.shanvikashyap9548.workers.dev?url=', headers={'x-access-token': f'{raw_text4}'}).json()['url']
             
             elif 'media-cdn.classplusapp.com' in url or 'media-cdn-alisg.classplusapp.com' in url or 'media-cdn-a.classplusapp.com' in url: 
                 headers = {'host': 'api.classplusapp.com', 'x-access-token': f'{raw_text4}', 'accept-language': 'EN', 'api-version': '18', 'app-version': '1.4.73.2', 'build-number': '35', 'connection': 'Keep-Alive', 'content-type': 'application/json', 'device-details': 'Xiaomi_Redmi 7_SDK-32', 'device-id': 'c28d3cb16bbdac01', 'region': 'IN', 'user-agent': 'Mobile-Android', 'webengage-luid': '00000187-6fe4-5d41-a530-26186858be4c', 'accept-encoding': 'gzip'}
@@ -1439,11 +1439,11 @@ async def text_handler(bot: Client, m: Message):
                 url   = response.json()['url']
 
             elif "childId" in url and "parentId" in url:
-                url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={raw_text4}"
+                url = f"https://anonymouspwplayer-907e62cf4891.herokuapp.com/pw?url={url}&token={raw_text4}"
                            
             elif "d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
                 vid_id =  url.split('/')[-2]
-                url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={raw_text4}"
+                url = f"https://anonymouspwplayer-907e62cf4891.herokuapp.com/pw?url={url}&token={raw_text4}"
                 
             if ".pdf*" in url:
                 url = f"https://dragoapi.vercel.app/pdf/{url}"
